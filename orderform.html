@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Order Form for Computer Components</title>
+        <link rel="stylesheet" href="css/stlyes.css" >
+</head>
+<body>
+    <main>
+<!-- Main heading -->
+        <h1 id="heading"><strong>ORDER FORM</strong></h1>
+        <form id="orderForm"> 
+            <form action="/orderform.html" method="get">
+            <!-- Field forms, personal data etc. -->
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" placeholder="John">
+                <small></small>
+            </div>
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Smith">
+            </div>
+            <div>
+            <label for="dob">Date of Birth:</label>
+                <input type="int" id="dob" name="dob" placeholder="01.01.2000">
+            <div>
+                <!-- Address input fields --> 
+            <h2><strong> Address </strong></h2>
+               </div>
+               <div> 
+               <label for="street">Street</label>
+               <input type="text" id="street" name="street" placeholder="Your Street...">
+               </div>
+               <div>
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" placeholder="Your City...">
+               </div> 
+               <div> 
+                <label for="postcode">Post Code</label>
+                <input type="postcode" id="postcode" name="postcode" placeholder="Your Postcode...">
+               </div>
+               <div> 
+                <label for="country">Country:</label>
+                <select id="Country" name="country">
+                    <option value="None">None</option>
+                    <option value="albania">Albania</option>
+                    <option value="austria">Austria</option>
+                    <option value="belarus">Belarus</option>
+                    <option value="belgium">Belgium</option>
+                    <option value="bosnia-and-herzegovina">Bosnia and Herzegovina</option>
+                    <option value="bulgaria">Bulgaria</option>
+                    <option value="croatia">Croatia</option>
+                    <option value="cyprus">Cyprus</option>
+                    <option value="czech-republic">Czech Republic</option>
+                    <option value="denmark">Denmark</option>
+                    <option value="estonia">Estonia</option>
+                    <option value="finland">Finland</option>
+                    <option value="france">France</option>
+                    <option value="georgia">Georgia</option>
+                    <option value="germany">Germany</option>
+                    <option value="greece">Greece</option>
+                    <option value="hungary">Hungary</option>
+                    <option value="iceland">Iceland</option>
+                    <option value="ireland">Ireland</option>
+                    <option value="italy">Italy</option>
+                    <option value="kazakhstan">Kazakhstan</option>
+                    <option value="kosovo">Kosovo</option>
+                    <option value="latvia">Latvia</option>
+                    <option value="lithuania">Lithuania</option>
+                    <option value="luxembourg">Luxembourg</option>
+                    <option value="malta">Malta</option>
+                    <option value="monaco">Monaco</option>
+                    <option value="montenegro">Montenegro</option>
+                    <option value="netherlands">Netherlands</option>
+                    <option value="norway">Norway</option>
+                    <option value="poland">Poland</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="romania">Romania</option>
+                    <option value="russia">Russia</option>
+                    <option value="serbia">Serbia</option>
+                    <option value="slovakia">Slovakia</option>
+                    <option value="slovenia">Slovenia</option>
+                    <option value="spain">Spain</option>
+                    <option value="sweden">Sweden</option>
+                    <option value="switzerland">Switzerland</option>
+                    <option value="turkey">Turkey</option>
+                    <option value="ukraine">Ukraine</option>
+                    <option value="united-kingdom">United Kingdom</option>
+                </select>
+               </div>
+               <!-- PC components input option values -->
+               <h3><Strong>PC Components</Strong></h3>
+                    <div>
+                    <label for="cpu"> CPU </label>
+                    <select id="cpu" name="cpu">
+                        <option value="none">None</option>
+                        <optgroup label="Intel">
+                            <option value="intel-i9-13900K">Intel Core i9-13900K</option>
+                            <option value="intel-i9-13700K">Intel Core i9-13700K</option>
+                            <option value="intel-i7-13700K">Intel Core i7-13700K</option>
+                            <option value="intel-i7-12700K">Intel Core i7-12700K</option>
+                            <option value="intel-i5-13600K">Intel Core i5-13600K</option>
+                            <option value="intel-i5-12600K">Intel Core i5-12600K</option>
+                            <option value="intel-i5-12400">Intel Core i5-12400</option>
+                            <option value="intel-i3-12100">Intel Core i3-12100</option>
+                        </optgroup>
+                        <optgroup label="AMD">
+                            <option value="amd-ryzen-9-7950X">AMD Ryzen 9 7950X</option>
+                            <option value="amd-ryzen-9-7900X">AMD Ryzen 9 7900X</option>
+                            <option value="amd-ryzen-7-7800X3D">AMD Ryzen 7 7800X3D</option>
+                            <option value="amd-ryzen-7-7700X">AMD Ryzen 7 7700X</option>
+                            <option value="amd-ryzen-5-7600X">AMD Ryzen 5 7600X</option>
+                            <option value="amd-ryzen-5-5600X">AMD Ryzen 5 5600X</option>
+                            <option value="amd-ryzen-5-5500">AMD Ryzen 5 5500</option>
+                            <option value="amd-ryzen-3-5300G">AMD Ryzen 3 5300G</option>
+                        </optgroup>            
+                    </select>
+                </div>
+                
+                <div> 
+                <label for="gpu">GPU</label>
+                <select id="gpu" name="gpu">
+                    <option value="none">None</option>    
+                    <optgroup label="NVIDIA">
+                            <option value="nvidia-rtx-4090">NVIDIA GeForce RTX 4090</option>
+                            <option value="nvidia-rtx-4080">NVIDIA GeForce RTX 4080</option>
+                            <option value="nvidia-rtx-4070">NVIDIA GeForce RTX 4070</option>
+                            <option value="nvidia-rtx-4060">NVIDIA GeForce RTX 4060</option>
+                            <option value="nvidia-rtx-3090">NVIDIA GeForce RTX 3090</option>
+                            <option value="nvidia-rtx-3080">NVIDIA GeForce RTX 3080</option>
+                            <option value="nvidia-rtx-3070">NVIDIA GeForce RTX 3070</option>
+                            <option value="nvidia-rtx-3060">NVIDIA GeForce RTX 3060</option>
+                        </optgroup>
+                        <optgroup label="AMD">
+                            <option value="amd-rx-7900XTX">AMD Radeon RX 7900 XTX</option>
+                            <option value="amd-rx-7900XT">AMD Radeon RX 7900 XT</option>
+                            <option value="amd-rx-7800XT">AMD Radeon RX 7800 XT</option>
+                            <option value="amd-rx-7700XT">AMD Radeon RX 7700 XT</option>
+                            <option value="amd-rx-6900XT">AMD Radeon RX 6900 XT</option>
+                            <option value="amd-rx-6800XT">AMD Radeon RX 6800 XT</option>
+                            <option value="amd-rx-6700XT">AMD Radeon RX 6700 XT</option>
+                            <option value="amd-rx-6600XT">AMD Radeon RX 6600 XT</option>
+                        </optgroup>
+                </select>
+                </div>
+
+                <div> 
+                    <label for="ram">RAM</label>
+                    <select id="ram" name="ram">
+                    <option value="none">None</option>
+                    <optgroup label="DDR5">
+                        <option value="ddr5-16gb-4800">DDR5 16GB 4800MHz</option>
+                        <option value="ddr5-32gb-4800">DDR5 32GB 4800MHz</option>
+                        <option value="ddr5-16gb-5200">DDR5 16GB 5200MHz</option>
+                        <option value="ddr5-32gb-5200">DDR5 32GB 5200MHz</option>
+                        <option value="ddr5-64gb-5200">DDR5 64GB 5200MHz</option>
+                        <option value="ddr5-16gb-6000">DDR5 16GB 6000MHz</option>
+                        <option value="ddr5-32gb-6000">DDR5 32GB 6000MHz</option>
+                        <option value="ddr5-64gb-6000">DDR5 64GB 6000MHz</option>
+                    </optgroup>
+                    <optgroup label="DDR4">
+                        <option value="ddr4-8gb-2400">DDR4 8GB 2400MHz</option>
+                        <option value="ddr4-16gb-2400">DDR4 16GB 2400MHz</option>
+                        <option value="ddr4-8gb-2666">DDR4 8GB 2666MHz</option>
+                        <option value="ddr4-16gb-2666">DDR4 16GB 2666MHz</option>
+                        <option value="ddr4-32gb-2666">DDR4 32GB 2666MHz</option>
+                        <option value="ddr4-8gb-3200">DDR4 8GB 3200MHz</option>
+                        <option value="ddr4-16gb-3200">DDR4 16GB 3200MHz</option>
+                        <option value="ddr4-32gb-3200">DDR4 32GB 3200MHz</option>
+                    </optgroup>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="storage">Storage</label>
+                    <select id="storage" name="storage">
+                        <option value="none">None</option>
+                        <optgroup label="NVMe SSD">
+                            <option value="nvme-ssd-500gb">NVMe SSD 500GB</option>
+                            <option value="nvme-ssd-1tb">NVMe SSD 1TB</option>
+                            <option value="nvme-ssd-2tb">NVMe SSD 2TB</option>
+                            <option value="nvme-ssd-4tb">NVMe SSD 4TB</option>
+                        </optgroup>
+                        <optgroup label="SATA SSD">
+                            <option value="sata-ssd-250gb">SATA SSD 250GB</option>
+                            <option value="sata-ssd-500gb">SATA SSD 500GB</option>
+                            <option value="sata-ssd-1tb">SATA SSD 1TB</option>
+                            <option value="sata-ssd-2tb">SATA SSD 2TB</option>
+                        </optgroup>
+                        <optgroup label="HDD">
+                            <option value="hdd-1tb">HDD 1TB</option>
+                            <option value="hdd-2tb">HDD 2TB</option>
+                            <option value="hdd-4tb">HDD 4TB</option>
+                            <option value="hdd-8tb">HDD 8TB</option>
+                        </optgroup>
+                        <optgroup label="External Storage">
+                            <option value="external-ssd-500gb">External SSD 500GB</option>
+                            <option value="external-ssd-1tb">External SSD 1TB</option>
+                            <option value="external-ssd-2tb">External SSD 2TB</option>
+                            <option value="external-hdd-1tb">External HDD 1TB</option>
+                            <option value="external-hdd-2tb">External HDD 2TB</option>
+                            <option value="external-hdd-4tb">External HDD 4TB</option>
+                    </select>
+                </div>
+            <div>
+            <button type="submit">Submit</button>
+            </div>
+        </form>
+        </main>
+        <footer>
+            <p>&copy; 2024 IU University of Applied Sciences</p>
+        </footer>
+        <script src="scripts.js"> </script>
+    </body>
+</html>
